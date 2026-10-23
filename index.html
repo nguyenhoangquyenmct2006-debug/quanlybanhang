@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quản lý khách hàng</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>QUẢN LÝ KHÁCH HÀNG</h1>
+
+        <div class="form-box">
+
+            <h2>Thông tin khách hàng</h2>
+
+            <input type="text" id="maKH" placeholder="Mã khách hàng">
+
+            <input type="text" id="hoTen" placeholder="Họ và tên">
+
+            <input type="text" id="soDienThoai" placeholder="Số điện thoại">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <button onclick="themKhachHang()">
+                Thêm khách hàng
+            </button>
+
+        </div>
+
+
+        <div class="table-box">
+
+            <h2>Danh sách khách hàng</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Mã KH</th>
+                        <th>Họ tên</th>
+                        <th>Số điện thoại</th>
+                        <th>Email</th>
+                        <th>Thao tác</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="danhSachKhachHang">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
